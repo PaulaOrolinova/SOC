@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Title that displays in browser tab-->
+    <title>Wireframe</title>
+
+    <!--Link to css stylesheet-->
+    <link rel="stylesheet" type="text/css" href="styless.css">
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Naše LOGO</a>
+            </div>
+            <div id="menuDiv" class="menu">
+                <ul class="navlinks">
+                    <li><a href="#">O nás</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Pomoc</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home"> 
+    </section>       
+    
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+
+</body>
