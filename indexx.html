@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <!--Title that displays in browser tab-->
-    <title>Wireframe</title>
+    <title>SOC</title>
 
     <!--Link to css stylesheet-->
     <link rel="stylesheet" type="text/css" href="styless.css">
@@ -31,19 +31,33 @@
                 <i></i>
             </span>
         </div>
-    </nav>
+    </nav>    
 
-    <section class="home"> 
-    </section>       
+    <div class="flex-box">
+        <div class="home">
+            <h1>VITAJTE !</h1>
+        </div>
+    </br>
+        <div class="buttons">
+            <button class="button-17" role="button" onclick=""> Prihlásenie </button>
+            <div class="gap"></div>
+            <button class="button-17" role="button"> Registrácia </button>
+        </div>
     
+    </div>
+   
 
-<!-- Jquery needed -->
+
+
+
+
+    <!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
 
-<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
     <script>
-        $(window).scroll(function() {
+        $(window).scroll(function () {
             if ($(document).scrollTop() > 50) {
                 $('.nav').addClass('affix');
                 console.log("OK");
